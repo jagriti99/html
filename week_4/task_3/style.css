@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+header{
+    display:flex;
+    align-items:top;
+    padding:1rem; /* to have space around the heading content*/
+    background-color: rgb(245, 230, 25);
+    color: black;
+}
+.site-title{
+    flex:1;
+}
+
+ul{
+    display:flex;
+    list-style-type: none;
+    flex:1;
+    background-color: rgb(233, 171, 240);
+    align-items: top;
+}
+li{
+    margin:0rem;
+    padding: 1.5rem;
+  
+}
+.post-title{
+    background-color: rgb(146, 146, 245);
+    height: 2rem;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(104, 207, 159);
+    flex:1;
+}
