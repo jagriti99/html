@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "lato", sans-serif;
+    color:#333;
+}
+/* below for change in icon size */
+i{
+    font-size:3rem;
+}
+h2{
+    margin: 2rem 0;
+
+}
+
+p{
+    margin:1rem;
+    line-height: 1.5rem;
+}
+.container{
+max-width: 1000px;
+margin:0 auto;
+
+}
+#skills{
+    min-height: 500px;
+}
+.skill{
+    background-color: rgb(247,247,247);
+    padding: 2rem;
+    border:1px solid gray;
+
+}
+/* change the color of alternate box */
+.skill:nth-child(odd){
+    background-color: rgb(85, 50, 212);
+}
+.skills_group{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+     justify-content: space-around; 
+    /* to give space around the box */ 
+    text-align: center;
+}
+
+progress[value]{
+    height:1.5rem;
+    background:transparent;
+    -webkit-appearance: none;
+}
+/* below shows the progress bar empty space */
+progress[value]::-webkit-progress-bar{
+    background-color: rgb(237, 109, 109);
+    border-radius: 5px;
+}
+/* below shows the progress in actual bar coral color */
+progress[value]::-webkit-progress-value{
+    background-color: coral;
+    border-radius: 5px;
+    background-size: 35px 20px;
+}
+
