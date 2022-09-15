@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(244, 213, 173);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "Stitle Stitle nav1 nav2 nav3"
+    "Ptitle Ptitle Ptitle Ptitle sidebar"
+    "meta content content content sidebar"
+    "meta content content content ads"
+    "meta image image image ads"
+    "meta image image image stuff"
+    "meta image image image stuff"
+    
+    "footer footer footer footer footer ";
+    grid-gap:0.4rem;
+    grid-auto-rows: 1fr;
+    margin: 0.5rem
+    }
+
+.Stitle{
+    grid-area: Stitle;
+    background: aqua;
+    min-height: 150px;
+}
+.nav1{
+    grid-area: nav1;
+    background: pink;
+    
+}
+.nav2{
+    grid-area: nav2;
+    background: pink;
+    
+}
+.nav3{
+    grid-area: nav3;
+    background: pink;
+   
+}
+
+.Ptitle{
+    grid-area: Ptitle;
+    background: rgb(121, 121, 233);
+   
+}
+.sidebar{
+    grid-area: sidebar;
+    background: chocolate;
+   
+
+}
+.meta{
+    grid-area: meta;
+    background: lightgreen;
+    
+}
+.content{
+    grid-area: content;
+    background: gray;
+
+}
+.ads{
+    grid-area: ads;
+    background: green;
+   
+}
+.image{
+    grid-area: image;
+    background: yellow;
+    
+}
+.stuff{
+    grid-area: stuff;
+    background: purple;
+    
+}
+.footer{
+    grid-area: footer;
+    background:brown;
+    
+}
+
+/* without grid area (teacher's solution) */
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(244, 213, 173);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat (6,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap:0.4rem;
+}
+.item{
+    min-height: 100px;
+}
+.Stitle{
+    background: yellow;
+    grid-column: 1 / span 3;
+}
+.nav{
+    backgound: pink;
+}
+.Ptitle{
+    background: blue;
+    grid-column: 1 / span 5;
+}
+.sidebar{
+    backgound: orange;
+    grid-row:2 / span 2;
+    grid-column: 6 /span 1
+}
+.meta{
+    backgorund: green;
+    gird-row: 3 /span 5;
+}
+.content{
+    background: gray;
+    grid-column: 2 / span 4;
+    grid-row: 3 / span 2;
+}
+.ads{
+     grid-row:4 / span 2;
+    grid-column: 6 /span 1;
+}
+.image{
+   grid-row: 5 / span 2;
+    grid-column: 2 /span 4;
+}
+.stuff{
+       grid-row:6 / span 2;
+    
+}
+.footer{
+       grid-row:7 / span 8;
+   
+}
